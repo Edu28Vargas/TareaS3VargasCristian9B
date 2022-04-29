@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TareaS3VargasCristian9B.Pagina_inicial">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="PROMEDIO PRIMER PARCIAL " HorizontalTextAlignment="Center" FontSize="20" TextColor="Blue"/>
+
+            <Grid>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label Text="Nota Seguimiento" Grid.Row="0" Grid.Column="0"/>
+                <Entry x:Name="txtDatoUno" Placeholder="Ingrese nota de seguimiento" Keyboard="Numeric" TextColor="Black" Grid.Row="0" Grid.Column="1"/>
+                <Label Text="Nota del Examen" Grid.Row="1" Grid.Column="0"/>
+                <Entry x:Name="txtDatoDos" Placeholder="Ingrse nota del Examen" Keyboard="Numeric" TextColor="Black" Grid.Row="1" Grid.Column="1"/>
+                <Label Text="Promedio Primer Parcial:" Grid.Row="2" Grid.Column="0"/>
+                <Entry x:Name="txtResultado" Placeholder="" Grid.Row="2" Grid.Column="1" TextColor="Black"/>
+            </Grid>
+
+
+
+            <Label Text="PROMEDIO 2 PARCIAL " HorizontalTextAlignment="Center" FontSize="20" TextColor="Blue"/>
+            <Grid>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Label Text="Nota Seguimiento" Grid.Row="0" Grid.Column="0"/>
+                <Entry x:Name="txtDatoTres" Placeholder="Ingresar Notas de Seguimiento" Keyboard="Numeric" TextColor="Black" Grid.Row="0" Grid.Column="1"/>
+                <Label Text="Nota del Examen" Grid.Row="1" Grid.Column="0"/>
+                <Entry x:Name="txtDatoCuatro" Placeholder="Ingresar Nota del Examen" Keyboard="Numeric" TextColor="Black" Grid.Row="1" Grid.Column="1"/>
+                <Label Text="Nota Segundo Parcial" Grid.Row="2" Grid.Column="0"/>
+                <Entry x:Name="txtCalculo" Placeholder="" Grid.Row="2" Grid.Column="1" IsReadOnly="True"/>
+            </Grid>
+            <Button x:Name="btnCalculos" Text="Calcular" Clicked="btnCalcular_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

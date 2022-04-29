@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TareaS3VargasCristian9B.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Bienvenido" HorizontalTextAlignment="Center" TextColor="White" FontSize="30"/>
+        </Frame>
+        <Image Source ="https://www.oyeme.pe/static/imagenes/login.png" Aspect="AspectFill"/>
+ 
+           
+        <Entry x:Name="txtUser" Placeholder="Usuario" HorizontalTextAlignment="Center"/>
+            <Entry x:Name="txtPassword" Placeholder="Contraseña" HorizontalTextAlignment="Center" IsPassword="True"/>
+        
+      
+        <Button x:Name="btnAbrir" Text="Iniciar Sesion" Clicked="btnAbrir_Clicked"/>
+                <StackLayout Orientation="Horizontal">
+            <Label Text="Recuperar contraseña"/>
+            <Label Text="Registrarse" HorizontalOptions="EndAndExpand"/>
+           
+        </StackLayout>
+        
+    </StackLayout>
+</ContentPage>
